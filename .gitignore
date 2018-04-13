@@ -27,3 +27,7 @@
 /public/
 /test/
 /db/schema.rb
+/.drone.yml
+/Dockerfile
+/.framgia-ci-result.temp.yml
+/.framgia-ci-reports
