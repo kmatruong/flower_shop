@@ -23,8 +23,10 @@ ProtectMassAssignmentCheck: { }
 RemoveEmptyHelpersCheck: { }
 #RemoveTabCheck: { }
 RemoveTrailingWhitespaceCheck: { }
-RemoveUnusedMethodsInControllersCheck: { 
-  except_methods: [] }
+RemoveUnusedMethodsInControllersCheck: {
+  except_methods: [
+  StaticPagesController#show,
+  ] }
 RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
 RemoveUnusedMethodsInModelsCheck: {
   except_methods: [] }

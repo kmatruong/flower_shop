@@ -1,4 +1,6 @@
 scss_files: 'app/assets/stylesheets/**'
 exclude:
   - 'app/assets/stylesheets/application.css'
+  - 'app/assets/stylesheets/main_styles.min.css'
+  - 'app/assets/stylesheets/responsive.min.css'
   - 'vendor/assets/**'

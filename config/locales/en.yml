@@ -1,2 +1,21 @@
 en:
-  hello: "Hello world"
+  layouts:
+    footer:
+      author: "manhcuongdtbk"
+      by: "by"
+      contact_us: "Contact us"
+      faqs: "FAQs"
+      trademark: "©2018 All Rights Reserverd. This template is made with"
+    header:
+      contact: "contact"
+      home: "home"
+      my_account: "My Account"
+      register: "Register"
+      shop_name: "flower"
+      shop_suffix: "shop"
+      shop: "shop"
+      sign_in: "Sign In"
+      top_nav_left: free shipping forever
+  static_pages:
+    home:
+      title: "Home"
