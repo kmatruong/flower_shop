@@ -15,7 +15,33 @@ en:
       shop_suffix: "shop"
       shop: "shop"
       sign_in: "Sign In"
+      sign_out: "Sign Out"
       top_nav_left: free shipping forever
   static_pages:
     home:
       title: "Home"
+  devise:
+    registrations:
+      new:
+        sign_up: "Sign up"
+        paren: "("
+        minimun_passwd: " characters minimum)"
+      edit:
+        h2: "Edit "
+        update: "Update"
+        back: "Back"
+        reconfirmation: "Currently waiting confirmation for: "
+        leave_blank: "(leave blank if you don't want to change it)"
+        current_passwd: "(we need your current password to confirm your changes)"
+        minimun_passwd: " characters minimum"
+    sessions:
+      new:
+        h2: "Log in"
+    shared:
+      link:
+        log_in: "Log in"
+        sign_up: "Sign up"
+        forgot_passwd: "Forgot your password?"
+        didreceive: "Didn't receive confirmation instructions?"
+        didunlock: "Didn't receive unlock instructions?"
+        sign_in_with: "Sign in with"
