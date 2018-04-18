@@ -1,0 +1,41 @@
+@import 'bootstrap';
+@import 'font-awesome';
+
+.sign-up {
+  margin: 150px 30% 0;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@mixin box-sizing {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+.uneditable-input {
+  @include box-sizing;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  height: auto;
+}
+
+.checkbox {
+  margin: 10px 0;
+
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+
+.session-remember-me {
+  margin-left: 0;
+  width: auto;
+}
