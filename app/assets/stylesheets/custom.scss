@@ -1,8 +1,10 @@
 @import 'bootstrap';
 @import 'font-awesome';
 
+$color: #dc3545;
+
 .sign-up {
-  margin: 150px 30% 0;
+  margin: 200px 30% 0;
 
   h2 {
     text-align: center;
@@ -39,3 +41,12 @@ input {
   margin-left: 0;
   width: auto;
 }
+
+.flash-message {
+  background-color: $color;
+  margin: 180px 65% 0 9%;
+}
+
+.color {
+  background-color: $color;
+ }

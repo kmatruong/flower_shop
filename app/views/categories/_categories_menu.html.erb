@@ -1,0 +1,28 @@
+<div class="new_arrivals">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div class="section_title new_arrivals_title">
+          <h2><%= t".new_arri" %></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col text-center">
+        <div class="new_arrivals_sorting">
+          <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+            <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center change-color" data-filter="*">
+              <%= link_to t(".all_products"), products_path, remote: true, mehthod: :get %>
+            </li>
+            <% categories_menu.each do |category| %>
+              <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center change-color" data-filter="*">
+                <%= link_to category.name, category_path(category), remote: true, method: :get %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="jstest"></div>
+  </div>
+</div>

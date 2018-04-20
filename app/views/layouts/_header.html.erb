@@ -9,20 +9,20 @@
           <div class="top_nav_right">
             <ul class="top_nav_menu">
               <li class="account">
-                <%= link_to edit_user_registration_path do %>
+                <%= link_to edit_user_registration_path, method: :get do %>
                   <%= t ".my_account" %>
                   <i class="fa fa-angle-down"></i>
                 <% end %>
                 <ul class="account_selection">
                   <% if !user_signed_in? %>
                     <li>
-                      <%= link_to new_user_session_path do %>
+                      <%= link_to new_user_session_path, method: :get do %>
                         <i class="fa fa-sign-in" aria-hidden="true"></i>
                         <%= t ".sign_in" %>
                       <% end %>
                     </li>
                     <li>
-                      <%= link_to new_user_registration_path do %>
+                      <%= link_to new_user_registration_path, method: :get do %>
                         <i class="fa fa-user-plus" aria-hidden="true"></i>
                         <%= t ".register" %>
                       <% end %>
@@ -48,14 +48,14 @@
       <div class="row">
         <div class="col-lg-12 text-right">
           <div class="logo_container">
-            <%= link_to root_path do %>
+            <%= link_to root_path, method: :get do %>
               <%= t ".shop_name" %><span><%= t ".shop_suffix" %></span>
             <% end %>
           </div>
           <nav class="navbar">
             <ul class="navbar_menu">
-              <li><%= link_to t(".home"), root_path %></li>
-              <li><%= link_to t(".shop"), "#" %></li>
+              <li><%= link_to t(".home"), root_path, method: :get %></li>
+              <li><%= link_to t(".shop"), category_path(1) %></li>
               <li><%= link_to t(".contact"), "#" %></li>
             </ul>
             <ul class="navbar_user">
@@ -83,7 +83,4 @@
       </div>
     </div>
   </div>
-  <% flash.each do |message_type, message| %>
-    <%= content_tag :div, message, class: "alert alert-#{message_type}" %>
-  <% end %>
 </header>

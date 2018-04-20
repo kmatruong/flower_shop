@@ -1,0 +1,42 @@
+<div class="hamburger_menu">
+  <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+  <div class="hamburger_menu_content text-right">
+    <ul class="menu_top_nav">
+      <li class="menu_item has-children">
+        <%= link_to edit_user_registration_path do %>
+          <%= t ".my_account" %>
+          <i class="fa fa-angle-down"></i>
+        <% end %>
+        <ul class="account_selection">
+          <% if !user_signed_in? %>
+            <li>
+              <%= link_to new_user_session_path do %>
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <%= t ".sign_in" %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to new_user_registration_path do %>
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                <%= t ".register" %>
+              <% end %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <%= t ".sign_out" %>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+      <li><%= link_to t(".home"), root_path, class: "menu_item" %></li>
+      <li>
+        <%= link_to t(".shop"), categories_path, class: "menu_item",
+          method: :get %>
+      </li>
+      <li><%= link_to t(".contact"), "#", class: "menu_item" %></li>
+    </ul>
+  </div>
+</div>

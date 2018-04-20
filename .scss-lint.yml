@@ -3,4 +3,7 @@ exclude:
   - 'app/assets/stylesheets/application.css'
   - 'app/assets/stylesheets/main_styles.min.css'
   - 'app/assets/stylesheets/responsive.min.css'
+  - 'app/assets/stylesheets/categories_responsive.min.css'
+  - 'app/assets/stylesheets/categories_styles.min.css'
+  - 'app/assets/stylesheets/jquery-ui.min.css'
   - 'vendor/assets/**'

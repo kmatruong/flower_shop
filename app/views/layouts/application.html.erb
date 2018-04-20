@@ -11,8 +11,10 @@
   </head>
 
   <body>
-    <%= render "layouts/header" %>
-    <%= yield %>
-    <%= render "layouts/footer" %>
+    <div class="super_container">
+      <%= render "layouts/header" %>
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>

@@ -1,4 +1,6 @@
 en:
+  noproduct: "Not found product"
+  nocategory: "Not found category"
   layouts:
     footer:
       author: "manhcuongdtbk"
@@ -18,7 +20,7 @@ en:
       sign_out: "Sign Out"
       top_nav_left: free shipping forever
   static_pages:
-    home:
+    index:
       title: "Home"
   devise:
     registrations:
@@ -45,3 +47,16 @@ en:
         didreceive: "Didn't receive confirmation instructions?"
         didunlock: "Didn't receive unlock instructions?"
         sign_in_with: "Sign in with"
+  products:
+    show_products:
+      add_cart: "add to cart"
+  categories:
+    show:
+      shop: "Shop"
+      show: "Show:"
+      show_result: "Showing 1–3 of 12 results"
+    sidebar:
+      cate_products: "Product Category"
+    categories_menu:
+      new_arri: "New Arrivals"
+      all_products: "All"

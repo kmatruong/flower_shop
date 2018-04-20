@@ -26,6 +26,11 @@ RemoveTrailingWhitespaceCheck: { }
 RemoveUnusedMethodsInControllersCheck: {
   except_methods: [
   StaticPagesController#show,
+  StaticPagesController#index,
+  CategoriesController#index,
+  CategoriesController#show,
+  ProductsController#show,
+  ProductsController#index,
   ] }
 RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
 RemoveUnusedMethodsInModelsCheck: {
