@@ -31,6 +31,9 @@ RemoveUnusedMethodsInControllersCheck: {
   CategoriesController#show,
   ProductsController#show,
   ProductsController#index,
+  OrdersController#create,
+  OrdersController#destroy,
+  OrdersController#update,
   ] }
 RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
 RemoveUnusedMethodsInModelsCheck: {
