@@ -1,0 +1,16 @@
+<div class="banner">
+  <div class="container">
+    <div class="row">
+      <% categories.each do |category| %>
+        <div class="col-md-4">
+          <div class="banner_item align-items-center color">
+            <div class="banner_category">
+              <%= link_to category.name, category_path(category),
+                method: :get %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

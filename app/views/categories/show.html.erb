@@ -1,0 +1,33 @@
+<%= render "layouts/hamburger" %>
+<div class="container product_section_container">
+  <div class="row">
+    <div class="col product_section clearfix">
+      <div class="breadcrumbs d-flex flex-row align-items-center">
+        <ul>
+          <li>
+            <%= link_to t(".home"), root_path, method: :get %>
+          </li>
+          <li class="active">
+            <%= link_to categories_path, method: :get do %>
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+              <%= t".shop" %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+      <%= render "categories/sidebar", categories: @categories %>
+      <div class="main_content">
+        <div class="products_iso">
+          <div class="row">
+            <div class="col">
+              <div class="product-grid">
+                <%= render "products/show_products", products: supports.products %>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

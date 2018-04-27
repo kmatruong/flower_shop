@@ -1,0 +1,9 @@
+<% provide :title, t(".title") %>
+<%= render "layouts/hamburger" %>
+<div class="flash-message">
+  <% flash.each do |message_type, message| %>
+    <%= content_tag :div, message, class: "alert alert-#{message_type}" %>
+  <% end %>
+</div>
+<%= render "categories/categories_banner", categories: categories %>
+<%= render "categories/categories_menu", categories: categories %>

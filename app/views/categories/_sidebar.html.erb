@@ -1,0 +1,15 @@
+<div class="sidebar">
+  <div class="sidebar_section">
+    <div class="sidebar_title">
+      <h5><%= t".cate_products" %></h5>
+    </div>
+
+    <ul class="sidebar_categories">
+      <% categories.each do |category| %>
+        <li class="change-color-sidebar">
+          <%= link_to category.name, category_path(category),
+            method: :get %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
